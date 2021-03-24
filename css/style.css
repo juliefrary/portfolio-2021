@@ -1,0 +1,121 @@
+ 
+header h1{
+    font-family: 'Shippori Mincho B1';
+    font-weight: 700;
+    font-size: 80px;
+    color: #7D3A3B;
+    text-align: center;
+}
+header p{
+    font-family: 'Shippori Mincho B1';
+    font-weight: 400;
+    font-size: 10px;
+    color: #E3C89E;
+    text-align: center;
+}
+.credit, .credit a{
+    font-size: 5px;
+    color: #E3C89E;
+    position: absolute;
+}
+header{
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    height: 300px;
+    background-image: url("../images/fruit_aes.jpg");
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        background-attachment: fixed; /* Parallax effect */     
+        background-position: center;  /* Parallax effect */
+        background-repeat: no-repeat; /* Parallax effect */
+        background-size: cover;       /* Parallax effect */
+        height: 100px;
+        background-image: url("../images/fruit_aes.jpg");
+    }
+    header h1{
+        font-family: 'Shippori Mincho B1';
+        font-weight: 700;
+        font-size: 40px;
+        color: #7D3A3B;
+        text-align: center;
+        padding-top: 20px;
+    }
+    header p{
+        font-size: 0px;
+    }
+    .credit, .credit a{
+        font-size: 5px;
+        color: #E3C89E;
+        position: relative;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #FFE2B7;
+        padding: 10px;
+        font-family: 'Shippori Mincho B1';
+    }
+    nav a{
+        text-decoration: none;
+        color: #7D3A3B;
+    }
+    nav a:hover{
+        text-decoration: underline;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+    img{
+        width: 100%;
+        align-self: center;
+    }
+    .about-image{
+        grid-column: 1 / 4;
+        grid-row: 1 / -1;
+        max-width: 400px;
+        max-height: 300px;
+    }
+    .about-text{
+        grid-column: 4 / -1;
+        grid-row: 1;
+        border: 5px solid #2A3D45;
+        padding: 10px;
+        text-align: center;
+        align-self: center;
+        font-family: 'Shippori Mincho B1';
+        color: #8D99AE;
+    }
+    .a-container h2, .a-container h3, .a-container p{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .a-container h2{
+        font-family: 'Shippori Mincho B1';
+        font-size: 20px;
+        color: #2A3D45;
+    }
+    .a-container h3{
+        font-family: 'Shippori Mincho B1';
+        font-size: 18px;
+        color: #E3C89E;
+    }
+    .a-container li{
+        font-family: 'Shippori Mincho B1';
+        font-size: 16px;
+        color: #8D99AE;
+    }
+    ul{
+        list-style-type: square;
+    }
+    ol{
+        list-style-type: decimal;
+    }
+}
