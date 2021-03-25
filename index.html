@@ -16,23 +16,83 @@
           <p class = "credit">Photo by <a href="https://unsplash.com/@brookelark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brooke Lark</a> on <a href="/s/photos/aesthetically-pleasing-cooking?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
           </p>
       </header>
+
       <nav>
           <ul>
-            <li><a href = "index.html">About Me</a></li>
+            <li class="current_item"><a href = "index.html">About Me</a></li>
             <li><a href = "appetizers.html">Appetizers</a></li>
             <li><a href = "breakfast.html">Breakfast</a></li>
             <li><a href = "dinner.html">Dinner</a></li>
           </ul>
       </nav>
+
       <main class="container">
+  
         <div class="about-image">
           <img src="images/selfie.jpg" class = "about-image" alt="Selfie"/>
         </div>
         <div class="about-text">
           <h2>About Me</h2>
-          <p>Praesent eu lorem sed eros pellentesque tincidunt. Duis nec dapibus dui. Curabitur cursus dapibus lectus, at molestie ipsum hendrerit eget. Aliquam magna ipsum, gravida et ligula id, tincidunt facilisis arcu. In blandit, magna a pretium mollis, mauris odio cursus eros, tempor rutrum diam est non enim. Nunc porttitor imperdiet placerat. Mauris aliquam, purus nec viverra placerat, ipsum est sollicitudin ipsum, vel lacinia justo justo rutrum libero.</p>
+          <p>My name is Julie Frary and I am a sophomore at University of Michigan. I recently discovered a love for cooking. I’ve had the opportunity to try several recipes through the past year, and this site outlines some of my favorites : ). I hope you enjoy exploring these recipes and find to love them as much as I do!</p>
         </div>
-      </main>
+        
+        <div class="slideshow-container">
+          <div class="fade-slides">
+            <div class="numbertext">1 / 7</div>
+            <img src="images/edamame.jpeg"/>
+            <div class="text">Garlic Edamame</div>
+          </div>
+          <div class="fade-slides">
+            <div class="numbertext">2 / 7</div>
+            <img src="images/biscuits.jpeg"/>
+            <div class="text">Homemade Cheesy Biscuits</div>
+          </div>
+          <div class="fade-slides">
+            <div class="numbertext">3 / 7</div>
+            <img src="images/bc_soup.jpeg"/>
+            <div class="text">Broccoli Cheddar Soup</div>
+          </div>
+          <div class="fade-slides">
+            <div class="numbertext">4 / 7</div>
+            <img src="images/smashed_potatoes.jpeg"/>
+            <div class="text">Crispy Smashed Roasted Potatoes</div>
+          </div>
+          <div class="fade-slides">
+            <div class="numbertext">5 / 7</div>
+            <img src="images/vodka_sauce.jpeg"/>
+            <div class="text">Jon & Vinny's Vodka Sauce</div>
+          </div>
+          <div class="fade-slides">
+            <div class="numbertext">6 / 7</div>
+            <img src="images/orzo.jpeg"/>
+            <div class="text">Parmesan Orzo with Vegetables</div>
+          </div>
+          <div class="fade-slides">
+            <div class="numbertext">7 / 7</div>
+            <img src="images/zucchini.jpeg"/>
+            <div class="text">Zucchini Boats</div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
 
+        <br/>
+
+        <div class="dots" style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+        <script type="text/javascript" src="js/fade.js"></script>
+      </main>
+    <footer>
+      <p>University of Michigan School of Information <br/>
+        &copy; Julianne Frary - Web Design, Development, and Accessibility 2021</p>
+    </footer>
   </body>
 </html>
