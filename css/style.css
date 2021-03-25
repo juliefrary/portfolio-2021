@@ -13,11 +13,13 @@ header p{
     color: #E3C89E;
     text-align: center;
 }
+/*
 .credit, .credit a{
     font-size: 5px;
     color: #E3C89E;
     position: absolute;
 }
+*/
 header{
     background-attachment: fixed; /* Parallax effect */     
     background-position: center;  /* Parallax effect */
@@ -47,11 +49,13 @@ header{
     header p{
         font-size: 0px;
     }
+    /*
     .credit, .credit a{
         font-size: 5px;
         color: #E3C89E;
         position: relative;
     }
+    */
     nav ul{
         display: flex;
         flex-direction: row;
@@ -82,12 +86,12 @@ header{
     .about-text{
         grid-column: 1 / -1;
         grid-row: 1 / span 2;
-        border: 5px solid #2A3D45;
+        border: 5px solid #0D1B2A;
         padding: 10px;
         text-align: center;
         align-self: flex-end;
         font-family: 'Shippori Mincho B1';
-        color: #8D99AE;
+        color: #415a77;
     }
     .a-container h2, .a-container h3, .a-container p{
         display: flex;
@@ -97,17 +101,17 @@ header{
     .a-container h2{
         font-family: 'Shippori Mincho B1';
         font-size: 20px;
-        color: #2A3D45;
+        color: #0D1B2A;
     }
     .a-container h3{
         font-family: 'Shippori Mincho B1';
         font-size: 18px;
-        color: #E3C89E;
+        color: #7D3A3B;
     }
     .a-container li{
         font-family: 'Shippori Mincho B1';
         font-size: 16px;
-        color: #8D99AE;
+        color: #415A77;
     }
     ul{
         list-style-type: square;
