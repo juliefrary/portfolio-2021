@@ -1,35 +1,20 @@
- 
-header h1{
-    font-family: 'Shippori Mincho B1';
-    font-weight: 700;
-    font-size: 80px;
-    color: #7D3A3B;
-    text-align: center;
-}
-header p{
-    font-family: 'Shippori Mincho B1';
-    font-weight: 400;
-    font-size: 10px;
-    color: #E3C89E;
-    text-align: center;
-}
-/*
-.credit, .credit a{
-    font-size: 5px;
-    color: #E3C89E;
+.skip a{
+    background: white;
+    left: 0;
+    padding: 7px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  
+    /*Your code here*/
     position: absolute;
+    top: -50px;
 }
-*/
-header{
-    background-attachment: fixed; /* Parallax effect */     
-    background-position: center;  /* Parallax effect */
-    background-repeat: no-repeat; /* Parallax effect */
-    background-size: cover;       /* Parallax effect */
-    height: 300px;
-    background-image: url("../images/fruit_aes.jpg");
+.skip a:focus{
+    position: absolute;
+    top: 10px;
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 800px) {
     header{
         background-attachment: fixed; /* Parallax effect */     
         background-position: center;  /* Parallax effect */
@@ -211,5 +196,241 @@ header{
     @keyframes fade {
         from {opacity: .4}
         to {opacity: 1}
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+    header{
+        background-attachment: fixed; /* Parallax effect */     
+        background-position: center;  /* Parallax effect */
+        background-repeat: no-repeat; /* Parallax effect */
+        background-size: cover;       /* Parallax effect */
+        height: 200px;
+        background-image: url("../images/fruit_aes.jpg");
+    }
+    header h1{
+        font-family: 'Shippori Mincho B1';
+        font-weight: 700;
+        font-size: 80px;
+        color: #7D3A3B;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 250px;
+    }
+    header p{
+        font-family: 'Shippori Mincho B1';
+        font-weight: 400;
+        font-size: 15px;
+        color: #0D1B2A;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 250px;
+    }
+    /*
+    .credit, .credit a{
+        font-size: 10px;
+        color: #0D1B2A;
+        text-align: right;
+    }
+    */
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #FFE2B7;
+        padding: 28px;
+        font-family: 'Shippori Mincho B1';
+        font-size: 22px;
+    }
+    nav a{
+        text-decoration: none;
+        color: #7D3A3B;
+    }
+    nav a:hover{
+        text-decoration: underline;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(8, 1fr);
+        background-color: #ECF0F0;
+        justify-items: center;
+        align-items: center;
+    }
+    .about-image{
+        width: 100%;
+        max-height: 250px;
+        grid-column: 1;
+        grid-row: 1
+    }
+    .about-text h2{
+        grid-column: 2;
+        grid-row: 1;
+        padding: 10px;
+        text-align: left;
+        font-family: 'Shippori Mincho B1';
+        font-size: 36px;
+        color: #415a77;
+    }
+    .about-text p{
+        grid-column: 2;
+        grid-row: 1;
+        padding: 20px;
+        font-family: 'Shippori Mincho B1';
+        color: #415a77;
+    }
+    /*
+    .gallery img{
+        max-height: 200px;
+        max-width: 400px;
+    }
+    */
+    .edamame{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .edamame img{
+        justify-self: center;
+        max-height: 250px;
+        width: 75%;
+        border: 10px #0D1B2A solid;
+    }
+    .biscuits{
+        width: 100%;
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .biscuits img{
+        justify-self: center;
+        max-height: 250px;
+        width: 75%;
+        border: 10px #0D1B2A solid;
+    }
+    .soup{
+        width: 100%;
+        grid-row: 4;
+        grid-column: 2;
+    }
+    .soup img{
+        justify-self: center;
+        max-height: 250px;
+        width: 75%;
+        border: 10px #0D1B2A solid;
+    }
+    .potatoes{
+        width: 100%;
+        grid-row: 5;
+        grid-column: 1;
+    }
+    .potatoes img{
+        justify-self: center;
+        max-height: 250px;
+        width: 75%;
+        border: 10px #0D1B2A solid;
+    }
+    .pasta{
+        width: 100%;
+        grid-row: 6;
+        grid-column: 2;
+    }
+    .pasta img{
+        justify-self: center;
+        max-height: 250px;
+        width: 75%;
+        border: 10px #0D1B2A solid;
+    }
+    .orzo{
+        width: 100%;
+        grid-row: 7;
+        grid-column: 1;
+    }
+    .orzo img{
+        justify-self: center;
+        max-height: 250px;
+        width: 75%;
+        border: 10px #0D1B2A solid;
+    }
+    .zucchini{
+        width: 100%;
+        grid-row: 8;
+        grid-column: 2;
+    }
+    .zucchini img{
+        justify-self: center;
+        max-height: 250px;
+        width: 75%;
+        border: 10px #0D1B2A solid;
+    }
+    /*
+    .text{
+        display: none;
+    }
+    
+    .a-container h2, .a-container h3, .a-container li{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .a-container h2, .a-container h3, .a-container li:nth-child(odd){
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .a-container h2, .a-container h3, .a-container li:nth-child(even){
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+*/
+    .a-container div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .a-container h2{
+        font-family: 'Shippori Mincho B1';
+        font-size: 20px;
+        color: #0D1B2A;
+    }
+    .a-container h3{
+        font-family: 'Shippori Mincho B1';
+        font-size: 18px;
+        color: #7D3A3B;
+    }
+    .a-container li{
+        font-family: 'Shippori Mincho B1';
+        font-size: 16px;
+        color: #415A77;
+    }
+    ul li::marker{
+        display: list-item;
+        list-style-type: square;
+    }
+    ol li::marker{
+        display: list-item;
+        list-style-type: decimal;
+    }
+    .current_item a{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .text > a:nth-child(odd){
+        grid-column: 1;
+    }
+    .text > a:nth-child(odd){
+        grid-column: 2;
+    }
+    .text{
+        font-family: 'Shippori Mincho B1';
+        font-size: 24px;
+        color: #7D3A3B;
+    }
+    footer{
+        background-color: #7D3A3B;
+        color: white;
+        padding: 30px;
+        text-align: center;
     }
 }
