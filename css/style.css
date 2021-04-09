@@ -422,10 +422,14 @@
     .text > a:nth-child(odd){
         grid-column: 2;
     }
-    .text{
+    .text a{
         font-family: 'Shippori Mincho B1';
         font-size: 24px;
         color: #7D3A3B;
+        text-decoration: none;
+    }
+    .text a:hover{
+        text-decoration: underline;
     }
     footer{
         background-color: #7D3A3B;
